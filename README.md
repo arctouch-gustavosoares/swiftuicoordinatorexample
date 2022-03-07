@@ -1,7 +1,5 @@
 # SwiftUI Coordinator Example
 
-# NTransit-iOS
-
 ![Platform](https://img.shields.io/badge/iOS-14-green)
 
 Simple example of how use Coordinator Pattern with SwiftUI, in that example we use from Login to a Main View.
