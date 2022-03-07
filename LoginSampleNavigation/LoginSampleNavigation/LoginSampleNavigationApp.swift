@@ -10,19 +10,19 @@ import SwiftUI
 @main
 struct LoginSampleNavigationApp: App {
 
-    @StateObject var navigationCoordinator = NavigationCoordinator()
+    @StateObject var mainCoordinator = MainCoordinator()
 
     var body: some Scene {
         WindowGroup {
             VStack {
-                if navigationCoordinator.isLoggedIn {
+                if mainCoordinator.isLoggedIn {
                     MainView()
                         .transition(.move(edge: .leading))
-                            .environmentObject(navigationCoordinator)
+                            .environmentObject(mainCoordinator)
                 } else {
-                    LoginView(navigationCoordinator: navigationCoordinator)
+                    LoginView(mainCoordinator: mainCoordinator)
                 }
-            }.animation(.easeInOut(duration: 2.0), value: navigationCoordinator.isLoggedIn)
+            }.animation(.easeInOut(duration: 2.0), value: mainCoordinator.isLoggedIn)
         }
     }
 }
