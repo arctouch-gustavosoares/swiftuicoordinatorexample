@@ -58,7 +58,7 @@
 		156E5E0127D2F8E000FFA52C /* LoginSampleNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				156E5E1927D2FB3200FFA52C /* Helper */,
+				156E5E1927D2FB3200FFA52C /* Coordinator */,
 				156E5E1027D2F8ED00FFA52C /* Screens */,
 				156E5E0227D2F8E000FFA52C /* LoginSampleNavigationApp.swift */,
 				156E5E0627D2F8E500FFA52C /* Assets.xcassets */,
@@ -100,12 +100,12 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		156E5E1927D2FB3200FFA52C /* Helper */ = {
+		156E5E1927D2FB3200FFA52C /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				156E5E1A27D2FB6900FFA52C /* MainCoordinator.swift */,
 			);
-			path = Helper;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
